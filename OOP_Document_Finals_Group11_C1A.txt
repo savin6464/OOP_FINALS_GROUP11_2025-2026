@@ -1,0 +1,63 @@
+﻿TextBasedGame(TBG)
+Object-Oriented Programming 4 concepts of OOP: Java
+
+
+Members:
+Raekwon Benedict S. Nuevaorlanda
+
+
+Project Overview
+The TBG is a simple turn-based console game inspired by Dungeons & Dragons (DnD).
+The player chooses a character class (Warrior, Mage, or Archer) and battles against an enemy (e.g., Goblin). Each character has different stats and attack behaviors. The game loop continues until either the player or the enemy is defeated.
+The project demonstrates the four pillars of OOP — Abstraction, Encapsulation, Inheritance, and Polymorphism — through its class hierarchy and gameplay logic.
+___________________________________________________________________________
+
+
+Concepts
+	Where it used
+	Description
+	Abstraction
+	Character abstract class
+	Defines shared properties and abstract methods (attack) to be implemented by subclasses.
+	Encapsulation
+	Private fields (name, health, attackPower) in Character
+	Data is hidden and accessed through getters and setters.
+	Inheritance
+	Warrior, Mage, Archer, Goblin, etc…
+	Common structure is inherited while behavior is customized.
+	Polymorphism
+	Overridden attack() methods
+	Each class attacks differently, but all are called through Character references.
+	Abstraction
+* Where it’s used: Character abstract class
+
+* Detailed Explanation:
+Abstraction focuses on hiding complex implementation details and only exposing the essential features that subclasses must define.
+In this project, the Character class is declared as abstract, meaning it cannot be instantiated directly. It contains common fields like name, health, and attackPower, as well as the abstract method attack().
+Each subclass (e.g., Warrior, Mage, Archer) must implement attack() in its own way. This allows us to define a common structure for all characters while leaving the specific attack behavior to the subclasses.
+Encapsulation
+   * Where it’s used: Private fields (name, health, attackPower) in Character
+
+   * Detailed Explanation:
+Encapsulation is the bundling of data and methods that operate on that data, while restricting direct access from outside the class.
+In the Character class, the fields are marked as private, meaning they cannot be accessed directly by other classes. Instead, public getter and setter methods are provided, ensuring controlled access.
+This protects the data from accidental modification and allows validation or extra logic to be added inside the setters if needed.
+Inheritance
+      * Where it’s used: Warrior, Mage, Archer, Goblin classes extend Character
+
+      * Detailed Explanation:
+Inheritance allows classes to reuse fields and methods from a parent class, avoiding code duplication.
+In this project, the Warrior, Mage, Archer, and Goblin classes inherit all fields and methods from Character. They automatically have properties like name and health and can use the getters and setters without rewriting them.
+Each subclass can add or override behavior to create specialized versions of characters, while still keeping the shared structure.
+Polymorphism
+         * Where it’s used: Overridden attack() methods
+
+         * Detailed Explanation:
+Polymorphism allows objects of different classes to be treated as objects of a common superclass, while still exhibiting different behaviors.
+Here, every subclass overrides the attack() method to perform its unique attack. When we call attack() on a Character reference that points to a Warrior or Mage object, the correct subclass method runs automatically.
+This allows us to store different character types in a single array or list, loop through them, and call attack() without needing to know their exact type — making the code more flexible and maintainable.
+
+
+Conclusion
+This project demonstrates how OOP principles can structure even a simple game clearly and efficiently. By applying abstraction, encapsulation, inheritance, and polymorphism, the code became modular, reusable, and easy to expand (e.g., adding more character types or enemies).
+This approach mirrors real-world game design, where character classes, abilities, and behaviors are modeled through OOP concepts.
