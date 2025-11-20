@@ -6,36 +6,6 @@ DLSL FINALS MADE BY: Raekwon Benedict S. Nuevaorlanda_C2A
 |2.CLICK SimpleWASDCombatGame|
 |3.GO TO SEARCH TYPE : MAIN|
 |4.ON TOP OF THE MAIN SYNTAX CLICK : RUN MAIN|
-
-
-
-# WELCOME! Simple WASD Combat Game
-
-This is a basic top-down combat game built with **Java** (using the Swing library).
-
-## 🎮 How to Play
-
-| Key | Action |
-| :--- | :--- |
-| **W A S D** | Move |
-| **SHIFT** | Run (Faster movement) |
-| **SPACE** | Attack |
-| **ENTER** | Spawn an enemy (Goblin) |
-| **ESC** | Exit Game |
-
-## 💻 Running the Game in VS Code
-
-1.  Open Project:** Open the `WASD_Combat_Game` folder in VS Code.
-2.  Run File: Open the file **`SimpleWASDCombatGame.java`**.
-3.  Start Game: Click the **"Run"** button that appears right above the line `public static void main(String[] args)`.
-
----
-
-File Structure:
-The game is made of three files that must be in the same folder:
-* `SimpleWASDCombatGame.java` (The main application)
-* `GamePanel.java` (The main game logic)
-* `Goblin.java` (The enemy unit)
 _________________________________________________________________________________
 Important note: 
 
