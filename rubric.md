@@ -27,8 +27,19 @@ The code demonstrates solid OOP principles with good use of encapsulation, abstr
 ### 4. Base Grade (10%)
 **Score:** 5/5
 
+### 5. Extra Points (up to 6)
+
+**Features:** 1/5
+- UI Swing
+
+**Code Quality:** 1.0/1.0
+- Variable naming: 0.5/0.5
+- Code organization: 0.5/0.5
+
+**Extra Points Total:** +2.0
+
 ---
 
-## Final Grade: 73/100
+## Final Grade: 73 + 2.0 = **75/100**
 
 *Assessment generated based on project analysis.*
